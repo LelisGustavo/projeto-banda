@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik:wght@300;400&display=swap');
+
+:root {
+    --font-title: 'Rock Salt', cursive;
+    --font-text: 'Rubik', sans-serif;
+    --color-1: #F2F2F2;
+    --color-2: #BFBFBF;
+    --color-3: #737373;
+    --color-4: #262626;
+    --color-5: #0D0D0D;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--color-4);
+}
+
+h1 {
+    color: var(--color-1);
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-1);
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+p {
+    color: var(--color-3);
+    font-family: var(--font-text);
+    text-align: center;
+}
+
+/* Menu de navegação */
+#burguer {
+    background-color: var(--color-5);
+    color: var(--color-1);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    color: var(--color-3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-2);
+    padding: 10px;
+    box-shadow: var(--color-5);
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 0px 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-4);
+}
+
+a {
+    transition: 1s;
+    text-decoration: none;
+    color: var(--color-5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    transition: 1s;
+    background-color: var(--color-5);
+    color: var(--color-1);
+}
+
+/* Principal */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3);
+    padding-bottom: 10px;
+}
+
+img {
+    transition: 1s;
+    opacity: 0.7;  
+    border-radius: 5px;
+    flex: 1;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+img:hover {
+    transition: 1s;
+    opacity: 1;
+}
+
+
+/* Membros */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    color: var(--color-3);
+}
+
+.desc {
+    flex-basis: 100%;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+div > .desc > img {
+    flex-grow: 1;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* Albuns */
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-3); 
+    justify-content: center;
+}
+
+iframe {
+    flex-basis: 75%;
+    margin-bottom: 10px;
+}
+
+/* Loja */
+.contact, .footer {
+    background-color: var(--color-3);
+}
+
+.footer > p {
+    color: var(--color-4);
+}
+
+@media screen and (min-width: 768px) {
+    
+    p {
+        border-right: 1px solid var(--color-5);
+        padding: 15px;
+    }
+
+    /* Menu de navegação */
+    #burguer {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    li {
+        margin: 5px;  
+        display: inline-block;
+    }
+
+    /* Membros */
+    .desc {
+        flex-basis: calc(100% / 3);
+    }
+
+    /* Albuns */
+    iframe {
+        flex-basis: 30%;
+        margin-right: 10px;
+    }
+
+}
+
+
