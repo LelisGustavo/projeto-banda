@@ -49,7 +49,7 @@
 
             <h2>The Band</h2>
 
-            <p style="padding-bottom: 20px;">
+            <p style="padding-bottom: 20px; margin: 0px 5px;">
                 Blink-182 (stylized as blink-182) is an American rock band formed in Poway, California, in 1992. Their
                 current lineup consists of bassist/vocalist Mark Hoppus, guitarist/vocalist Tom DeLonge, and drummer
                 Travis Barker.
@@ -232,6 +232,8 @@
 
     </main>
 
+    <button class="button" id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"i></i></button>
+
     <footer class="container__footer">
 
         <p>
@@ -273,6 +275,13 @@
             }
 
         }
+
+        function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 
     </script>
 
