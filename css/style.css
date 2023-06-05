@@ -32,6 +32,8 @@ h2 {
     color: var(--color-1);
     font-family: var(--font-title);
     text-align: center;
+    text-decoration: underline;
+    margin-bottom: 15px;
 }
 
 p {
@@ -54,7 +56,7 @@ p {
     color: var(--color-3);
 }
 
-nav {
+.nav__bar {
     display: flex;
     justify-content: center;
     background-color: var(--color-2);
@@ -63,19 +65,19 @@ nav {
     border-radius: 5px;
 }
 
-ul {
+.nav__bar > ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-li {
+.nav__bar > ul > li {
     margin: 0px 10px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--color-4);
 }
 
-a {
+.nav__bar > ul > li > a {
     transition: 1s;
     text-decoration: none;
     color: var(--color-5);
@@ -83,14 +85,14 @@ a {
     border-radius: 5px;
 }
 
-a:hover {
+.nav__bar > ul > li > a:hover {
     transition: 1s;
     background-color: var(--color-5);
     color: var(--color-1);
 }
 
 /* Principal */
-.main {
+.main__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +100,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-img {
+.main__container > img {
     transition: 1s;
     opacity: 0.7;  
     border-radius: 5px;
@@ -107,14 +109,14 @@ img {
     max-height: 80%;
 }
 
-img:hover {
+.main__container > img:hover {
     transition: 1s;
     opacity: 1;
 }
 
 
 /* Membros */
-.members {
+.members__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,44 +142,162 @@ div > .desc > img {
 }
 
 /* Albuns */
-.albums {
+#albums {
+    background-color: var(--color-3); 
+}
+
+.albums__container {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--color-3); 
     justify-content: center;
 }
 
 iframe {
     flex-basis: 75%;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
 }
 
 /* Loja */
-.contact, .footer {
+.store__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.store__container > .img__container > img {
+    flex-basis: 100%;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.store__container > .img__container > p {
+    padding-bottom: 15px;
+}
+
+/* Contato */
+#contact {
     background-color: var(--color-3);
 }
 
-.footer > p {
+.container__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container__contact > .box > p {
     color: var(--color-4);
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    flex-basis: 100%;
+}
+
+.container__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.container__form > input, textarea {
+    font-family: var(--font-title);
+    font-size: .9em;
+    background-color: var(--color-1);
+    border: 1px solid var(--color-4);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px var(--color-5);
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.container__form > button {
+    transition: 1.5s;
+    font-family: var(--font-title);
+    font-size: .9em;
+    padding: 5px;
+    color: var(--color-1);
+    background-color: var(--color-5);
+    border: 1px solid var(--color-4);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px var(--color-1);
+}
+
+.container__form > button:hover {
+    transition: 1.5s;
+    color: var(--color-5);
+    background-color: var(--color-1);
+    box-shadow: 0px 4px 4px var(--color-5);
+    
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    border-radius: 5px;
+    flex: 1;
+    max-width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.container__footer {
+    background-color: var(--color-3);
+}
+
+.container__footer > p {
+    color: var(--color-4);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container__footer > p > a > i {
+    transition: .5s;
+    font-size: 1.5em;
+    color: var(--color-4);
+    margin: 5px;
+}
+
+.container__footer > p > a > i:hover {
+    transition: .5s;
+    color: var(--color-2);
+}
+
+.container__footer > p > a {
+    transition: .5s;
+    color: var(--color-4);
+} 
+
+.container__footer > p > a:hover {
+    transition: .5s;
+    color: var(--color-2);
 }
 
 @media screen and (min-width: 768px) {
     
-    p {
-        border-right: 1px solid var(--color-5);
-        padding: 15px;
-    }
 
     /* Menu de navegação */
     #burguer {
         display: none;
     }
 
-    nav {
+    .nav__bar {
         display: flex;
     }
 
-    li {
+    .nav__bar > ul > li {
         margin: 5px;  
         display: inline-block;
     }
@@ -187,11 +307,49 @@ iframe {
         flex-basis: calc(100% / 3);
     }
 
+    .desc > p {
+        border-right: 1px solid var(--color-5);
+        padding: 15px;
+    }
+
     /* Albuns */
     iframe {
         flex-basis: 30%;
         margin-right: 10px;
     }
+
+    /* Loja */
+    .store__container {
+        flex-direction: row;
+    }
+
+    .store__container > .img__container > img {
+        max-width: 90%;
+        margin-right: 75px;
+    }
+
+    .store__container > .img__container > p {
+    margin-left: -80px;
+    }
+
+    /* Contato */
+    .container__contact > .box {
+        flex-basis: 50%;
+    }
+
+    .container__form {
+        flex-basis: 50%;
+    }
+
+    /* Logo */
+    .logo > img { 
+    border-radius: 5px;
+    flex: 1;
+    max-width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 }
 

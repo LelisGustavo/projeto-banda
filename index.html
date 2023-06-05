@@ -17,15 +17,15 @@
 </head>
 
 <body onresize="changeSize()">
-    
+
     <header>
 
         <h1>Blink-182</h1>
         <i id="burguer" onclick="menuClick()" class="fa-solid fa-bars"></i>
 
         <!-- Menu de navegação -->
-        <nav id="nav__bar" class="nav-bar">
-            
+        <nav id="nav__bar" class="nav__bar">
+
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -33,10 +33,10 @@
                 <li><a href="#store">Store</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
+
         </nav>
-        
-        <div class="main">
+
+        <div class="main__container">
             <img class="menu" src="imagens/members/blink-182.jpg" alt="Band members" id="home">
         </div>
 
@@ -45,35 +45,48 @@
     <main>
 
         <!-- Seção que trata sobre a história da banda -->
-        <section class="band" id="band">
+        <section id="band">
 
             <h2>The Band</h2>
 
             <p style="padding-bottom: 20px;">
-                Blink-182 (stylized as blink-182) is an American rock band formed in Poway, California, in 1992. Their current lineup consists of bassist/vocalist Mark Hoppus, guitarist/vocalist Tom DeLonge, and drummer Travis Barker.
+                Blink-182 (stylized as blink-182) is an American rock band formed in Poway, California, in 1992. Their
+                current lineup consists of bassist/vocalist Mark Hoppus, guitarist/vocalist Tom DeLonge, and drummer
+                Travis Barker.
             </p>
 
             <!-- Fotos/Descrição dos integrantes da banda -->
-            <div class="members">
+            <div class="members__container">
 
                 <div class="desc">
                     <img src="imagens/members/thomas.jpg" alt="Thomas DeLonge">
                     <p>
-                        Thomas Matthew DeLonge (born December 13, 1975) is an American musician. Noted for his distinctive nasal singing voice, he rose to prominence as the co-founder, co-lead vocalist, and guitarist of the rock band Blink-182 from 1992 to 2005, 2009 to 2015, and then from 2022 onwards. He is also the lead vocalist and guitarist of the rock band Angels & Airwaves, which he formed in 2005 after his first departure from Blink-182.
+                        Thomas Matthew DeLonge (born December 13, 1975) is an American musician. Noted for his
+                        distinctive nasal singing voice, he rose to prominence as the co-founder, co-lead vocalist, and
+                        guitarist of the rock band Blink-182 from 1992 to 2005, 2009 to 2015, and then from 2022
+                        onwards. He is also the lead vocalist and guitarist of the rock band Angels & Airwaves, which he
+                        formed in 2005 after his first departure from Blink-182.
                     </p>
                 </div>
 
                 <div class="desc">
                     <img src="imagens/members/travis.jpg" alt="Travis Barker">
                     <p>
-                        Travis Landon Barker (born November 14, 1975) is an American musician who serves as the drummer for the rock band Blink-182. He has also performed as a frequent collaborator with hip hop artists, is a member of the rap rock group Transplants, cofounded the rock band +44, and joined Box Car Racer, Antemasque and Goldfinger. Barker was a frequent collaborator with the late DJ AM, and together they formed TRV$DJAM. Due to his fame, Rolling Stone referred to him as "punk's first superstar drummer" as well as one of the 100 greatest drummers of all time.
+                        Travis Landon Barker (born November 14, 1975) is an American musician who serves as the drummer
+                        for the rock band Blink-182. He has also performed as a frequent collaborator with hip hop
+                        artists, is a member of the rap rock group Transplants, cofounded the rock band +44, and joined
+                        Box Car Racer, Antemasque and Goldfinger. Barker was a frequent collaborator with the late DJ
+                        AM, and together they formed TRV$DJAM. Due to his fame, Rolling Stone referred to him as "punk's
+                        first superstar drummer" as well as one of the 100 greatest drummers of all time.
                     </p>
                 </div>
 
                 <div class="desc">
                     <img src="imagens/members/mark.jpg" alt="Mark Hoppus">
                     <p>
-                        Mark Allan Hoppus (born March 15, 1972) is an American musician, songwriter and producer best known as the bassist and co-lead vocalist for the rock band Blink-182, being the only member to appear on every one of their albums. He is also part of the pop rock duo Simple Creatures.
+                        Mark Allan Hoppus (born March 15, 1972) is an American musician, songwriter and producer best
+                        known as the bassist and co-lead vocalist for the rock band Blink-182, being the only member to
+                        appear on every one of their albums. He is also part of the pop rock duo Simple Creatures.
                     </p>
                 </div>
 
@@ -82,87 +95,134 @@
         </section>
 
         <!-- Seção que trata sobre a discografia da banda -->
-        <section class="albums" id="albums">
+        <section id="albums">
 
             <h2 style="padding-bottom: 10px;">Albums</h2>
 
             <!-- iframes do Spotify -->
-            <div class="albums">
+            <div class="albums__container">
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5I6NuHaiAe8nz2cC2ZPqBw?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/5I6NuHaiAe8nz2cC2ZPqBw?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6uTjljlshthbtA2U7V6u83?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/6uTjljlshthbtA2U7V6u83?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0RADUK8yTUBidzBke6Eszq?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/0RADUK8yTUBidzBke6Eszq?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/652N05EcNH1a4bIlUixQE2?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/652N05EcNH1a4bIlUixQE2?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3nHpBmW5wJXGeC3ojBkpey?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/3nHpBmW5wJXGeC3ojBkpey?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4hBTxv4QRPePXCFcEI7Vjp?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/4hBTxv4QRPePXCFcEI7Vjp?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0KjLbdlJYvtzXjGTwPy3lv?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/0KjLbdlJYvtzXjGTwPy3lv?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4wuYQ9hyF1EGmrtjMpgpE9?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/4wuYQ9hyF1EGmrtjMpgpE9?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4gARZz9eV7zbGbtOjhVTPF?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/4gARZz9eV7zbGbtOjhVTPF?utm_source=generator&theme=0"
+                    width="75%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
 
             </div>
 
         </section>
 
         <!-- Seção que trata dos produtos da banda -->
-        <section class="store" id="store">
+        <section id="store">
 
             <h2>Store</h2>
 
             <!-- Imagens/Descrições dos produtos -->
-            <div class="store" id="store">
+            <div class="store__container" id="store">
 
-                <img src="imagens/store/t-shirt-1.jfif" alt="Male T-shirt">
-                <p>Preço e tamanho</p>
+                <div class="img__container">
+                    <img src="imagens/store/t-shirt-1.jfif" alt="Male T-shirt">
+                    <p>US$49,90 / Sizes[M, L, XL]</p>
+                </div>
 
-                <img src="imagens/store/t-shirt-2.jfif" alt="Male T-shirt">
-                <p>Preço e tamanho</p>
+                <div class="img__container">
+                    <img src="imagens/store/t-shirt-2.jfif" alt="Male T-shirt">
+                    <p>US$49,90 / Sizes[M, L, XL]</p>
+                </div>
 
-                <img src="imagens/store/t-shirt-3.jfif" alt="Female T-shirt">
-                <p>Preço e tamanho</p>
+                <div class="img__container">
+                    <img src="imagens/store/t-shirt-3.jfif" alt="Female T-shirt">
+                    <p>US$39,90 / Sizes[S, M, L]</p>
+                </div>
 
-                <img src="imagens/store/t-shirt-4.jfif" alt="Female T-shirt">
-                <p>Preço e tamanho</p>
+                <div class="img__container">
+                    <img src="imagens/store/t-shirt-4.jfif" alt="Female T-shirt">
+                    <p>US$39,90 / Sizes[S, M, L]</p>
+                </div>
 
             </div>
 
         </section>
 
-        <hr>
-
         <!-- Seção que trata sobre como entrar em contato com a banda (ficticio) -->
-        <section class="contact" id="contact">
+        <section id="contact">
 
             <h2>Contatc</h2>
 
-            <p>Cidade</p>
-            <p>Telefone</p>
-            <p>Email</p>
+            <div class="container__contact">
 
-            <form action="">
+                <div class="box">
 
-                <label for="iname">Name</label>
-                <input type="text" name="name" id="iname">
+                    <p> <i class="fa-solid fa-city"></i> City: Poway, California </p>
+                    <p> <i class="fa-solid fa-phone"></i> Phone: (182) XXX-XXXX </p>
+                    <p> <i class="fa-solid fa-envelope"></i> Email: bink182@blink182.com </p>
 
-                <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail">
+                </div>
 
-                <textarea name="message" id="imessage" cols="30" rows="10"></textarea>
+                <form class="container__form" action="">
 
-                <button type="button">Send</button>
+                    <input type="text" name="name" id="name" placeholder=" Name...">
 
-            </form>
+                    <input type="email" name="email" id="email" placeholder=" Email...">
+
+                    <textarea name="message" id="imessage" cols="30" rows="4" style="resize: none"
+                        placeholder=" Send us a message..."></textarea>
+
+                    <button type="button">Send</button>
+
+                </form>
+
+            </div>
 
         </section>
-
-        <hr>
 
         <div class="logo">
 
@@ -172,16 +232,22 @@
 
     </main>
 
-    <hr>
+    <footer class="container__footer">
 
-    <footer class="footer">
-
-        <p>Links das redes socias/plataforma de áudio para ouvir as músicas da banda</p>
         <p>
-            Criado e desenvolvido por Gustavo Lélis.... Todos os direitos reservados a banda Blink ()
+            <a href="https://www.instagram.com/blink182/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/blink182" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/blink182/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://open.spotify.com/intl-pt/artist/6FBDaR13swtiWwGhX1WQsP?si=WuR3zVnCTti3PU5KBrZfVw" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://www.youtube.com/channel/UCdvlHk5SZWwr9HjUcwtu8ng" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </p>
+
         <p>
-            Esse site foi feito por um fã, não com finalidade de lucro, e sim de testar seus conhecimentos na área da tecnlogia
+            Developed by <a href="https://github.com/LelisGustavo/" target="_blank">Gustavo Lélis</a>... All rights reserved to the band Blink-182 &#174
+        </p>
+
+        <p>
+            This website was made by a fan, not for profit, but to test my knowledge in the field of technology
         </p>
 
     </footer>
